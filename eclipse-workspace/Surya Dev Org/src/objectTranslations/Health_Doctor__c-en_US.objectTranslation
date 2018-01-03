@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Doctor</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Doctor Object</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Information --></label>
+        <name>Additional_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Text --></label>
+        <name>Address_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth --></label>
+        <name>Date_of_Birth__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation><!-- 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16</masterLabel>
+            <translation><!-- 16 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17</masterLabel>
+            <translation><!-- 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18</masterLabel>
+            <translation><!-- 18 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19</masterLabel>
+            <translation><!-- 19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21</masterLabel>
+            <translation><!-- 21 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22</masterLabel>
+            <translation><!-- 22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23</masterLabel>
+            <translation><!-- 23 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24</masterLabel>
+            <translation><!-- 24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25</masterLabel>
+            <translation><!-- 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>26</masterLabel>
+            <translation><!-- 26 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>27</masterLabel>
+            <translation><!-- 27 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>28</masterLabel>
+            <translation><!-- 28 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>29</masterLabel>
+            <translation><!-- 29 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>31</masterLabel>
+            <translation><!-- 31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address 1 --></label>
+        <name>Health_Address_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address 2 --></label>
+        <name>Health_Address_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Nickname --></label>
+        <name>Health_Address_Nickname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Type --></label>
+        <name>Health_Address_Type__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation><!-- Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation><!-- Work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Health_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Type --></label>
+        <name>Health_Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>AuthContact</masterLabel>
+            <translation><!-- AuthContact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor</masterLabel>
+            <translation><!-- Doctor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient</masterLabel>
+            <translation><!-- Patient --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Doctor Identifier --></label>
+        <name>Health_Doctor_Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility Address --></label>
+        <name>Health_Facility_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility Fax Number --></label>
+        <name>Health_Facility_Fax_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility Name --></label>
+        <name>Health_Facility_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility Office Contact --></label>
+        <name>Health_Facility_Office_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility Phone Number --></label>
+        <name>Health_Facility_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax --></label>
+        <name>Health_Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>Health_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Health_Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Health_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month of Birth --></label>
+        <name>Health_Month_of_Birth__c</name>
+        <picklistValues>
+            <masterLabel>Apr</masterLabel>
+            <translation><!-- Apr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aug</masterLabel>
+            <translation><!-- Aug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dec</masterLabel>
+            <translation><!-- Dec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feb</masterLabel>
+            <translation><!-- Feb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jan</masterLabel>
+            <translation><!-- Jan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jul</masterLabel>
+            <translation><!-- Jul --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jun</masterLabel>
+            <translation><!-- Jun --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mar</masterLabel>
+            <translation><!-- Mar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nov</masterLabel>
+            <translation><!-- Nov --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oct</masterLabel>
+            <translation><!-- Oct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sep</masterLabel>
+            <translation><!-- Sep --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Office Contact --></label>
+        <name>Health_Office_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operating Business Hours --></label>
+        <name>Health_Operating_Business_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Number --></label>
+        <name>Health_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Shipping Address --></label>
+        <name>Health_Preferred_Shipping_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip Code --></label>
+        <name>Health_Zip_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lookup --></label>
+        <name>Lookup__c</name>
+        <relationshipLabel><!-- Doctor Object --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Med Doc Extension --></label>
+        <name>Med_Doc_Extension__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medicaid Provider Number --></label>
+        <name>Medicaid_Provider_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Number --></label>
+        <name>NPI_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- PECOS Certified --></label>
+        <name>PECOS_Certified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Method of Communication --></label>
+        <name>Preferred_Method_of_Communication__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Re-enter Email --></label>
+        <name>Re_enter_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Instructions for Doctor --></label>
+        <name>Special_Instructions_for_Doctor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Speciality --></label>
+        <name>Speciality_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Speciality --></label>
+        <name>Speciality__c</name>
+        <picklistValues>
+            <masterLabel>Dentist</masterLabel>
+            <translation><!-- Dentist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eye</masterLabel>
+            <translation><!-- Eye --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gynecologist</masterLabel>
+            <translation><!-- Gynecologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ortho</masterLabel>
+            <translation><!-- Ortho --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <layouts>
+        <layout>Doctor Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

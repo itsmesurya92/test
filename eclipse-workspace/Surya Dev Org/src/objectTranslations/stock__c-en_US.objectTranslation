@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>stock</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>stock</value>
+    </caseValues>
+    <fields>
+        <label><!-- States of warranty provider --></label>
+        <name>States_of_warranty_provider__c</name>
+        <picklistValues>
+            <masterLabel>birmingham</masterLabel>
+            <translation><!-- birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>british columbia</masterLabel>
+            <translation><!-- british columbia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>california</masterLabel>
+            <translation><!-- california --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>illinois</masterLabel>
+            <translation><!-- illinois --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>london</masterLabel>
+            <translation><!-- london --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>massachusetts</masterLabel>
+            <translation><!-- massachusetts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>melbourne</masterLabel>
+            <translation><!-- melbourne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>new york</masterLabel>
+            <translation><!-- new york --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ontario</masterLabel>
+            <translation><!-- ontario --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sydney</masterLabel>
+            <translation><!-- sydney --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Warranty Applicable --></label>
+        <name>Warranty_Applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Expiry Date --></label>
+        <name>Warranty_Expiry_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- country of warranty provider --></label>
+        <name>country_of_warranty_provider__c</name>
+        <picklistValues>
+            <masterLabel>australia</masterLabel>
+            <translation><!-- australia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>canada</masterLabel>
+            <translation><!-- canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>uk</masterLabel>
+            <translation><!-- uk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>usa</masterLabel>
+            <translation><!-- usa --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- price --></label>
+        <name>price__c</name>
+    </fields>
+    <fields>
+        <label><!-- quantity --></label>
+        <name>quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- time of stoking --></label>
+        <name>time_of_stoking__c</name>
+    </fields>
+    <fields>
+        <label><!-- total price of all units --></label>
+        <name>total_price_of_all_units__c</name>
+    </fields>
+    <fields>
+        <label><!-- warranty days left --></label>
+        <name>warranty_days_left__c</name>
+    </fields>
+    <fields>
+        <label><!-- warranty provider --></label>
+        <name>warranty_provider__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- please check warranty applicable before giving the warranty expiry date --></errorMessage>
+        <name>warranty_expiry_date_rule2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- if warranty is applicable, you have to give warranty expiry date --></errorMessage>
+        <name>warrenty_expiry_date_rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- if warranty is applicable, you have to put warranty expiry date as well as warranty provider --></errorMessage>
+        <name>warrenty_provider_rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- please check warranty applicable and warranty expiry date before giving warranty provider --></errorMessage>
+        <name>warrenty_provider_rule2</name>
+    </validationRules>
+</CustomObjectTranslation>

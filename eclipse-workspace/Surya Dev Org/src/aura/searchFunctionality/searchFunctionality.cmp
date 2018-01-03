@@ -1,0 +1,37 @@
+<aura:component controller="accountsWithContactsClass" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="accounts" type="Account[]" />
+   
+    <aura:handler name="init" value="{!this}" action="{!c.myfunc}"/>
+    
+    <ui:inputText value="{!fNameStr}" label="First Name"/>
+    <ui:inputText value="{!lNameStr}" label="Last Name"/>
+    <ui:button label="Search" press="{!getSearchContacts}"/>
+    
+    <table class="abc" style="width:49%;float: left;" >
+        <thead>
+            
+            <tr >
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Account Number</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Account Name</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">First Name</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Last Name</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.accounts}" var="acc">
+                <tr>
+                    <td style="border: 1px solid black;padding: 15px;"><a href="{!'/one/one.app?#/sObject/'+ acc.Id +'/view'}" target="_blank">{!acc.AccountNumber}</a></td>
+                    <td style="border: 1px solid black;padding: 15px;">{!acc.Name}</td>
+                    
+            <aura:iteration items="{!acc.Contacts}" var="con">
+                <tr>
+                    <td style="border: 1px solid black;padding: 15px;">{!con.FirstName}</td>
+                    <td style="border: 1px solid black;padding: 15px;">{!con.LastName}</td>
+                </tr>
+            </aura:iteration>
+                </tr>
+           </aura:iteration> 
+        </tbody>
+    </table>
+</aura:component>

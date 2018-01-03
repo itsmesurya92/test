@@ -1,0 +1,170 @@
+<apex:page controller="RetrieveClasses" docType="Html-5.0" showHeader="true">
+    <style>
+        .col1{
+            width:17%;
+            text-align: right;    
+        }
+        .col2{
+            width:17%;             
+        }
+        .col3{
+            width:66;            
+        }
+    </style>
+    <apex:form id="frm">   
+        <apex:pageMessages />
+        <apex:actionFunction name="controllRadios" action="{!controllMonthRadios}" rerender="byDay,byMonth,byWeek">
+           <apex:param value="" name="radioSel" assignto="{!radioSel}"/>
+           
+        </apex:actionfunction>
+       
+        <apex:actionFunction name="controllWeekMonth" reRender="options123"/>
+       
+        <apex:pageBlock title="Apex Job Runner">
+        <apex:pageBlockSection columns="1">
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Job Name" for="jname"/>
+                <apex:outputPanel styleClass="requiredInput" layout="block">
+                    <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                    <apex:inputText id="jname" value="{!jobName}"/>
+                </apex:outputPanel>
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Classes" for="cls"/>
+                <apex:outputPanel styleClass="requiredInput" layout="block">
+                    <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                     <apex:selectList value="{!SelectedApexClass}" size="1" >
+                         <apex:selectOptions value="{!ApexClassList}"/>
+                     </apex:selectList> 
+                </apex:outputPanel>
+            </apex:pageBlockSectionItem>
+            
+            <!--<apex:pageBlockSectionItem >-->
+                <!--<apex:outputLabel value="Run Time" for="rt"/>-->
+                <!--<apex:actionRegion >-->
+                <!--<apex:selectList value="{!SelectedSchFre}" multiselect="false" size="1">
+                    <apex:selectOptions value="{!Minutes}"/>
+                    <apex:actionSupport event="onchange" reRender="frm"/>
+                </apex:selectList>-->
+                <!--</apex:actionRegion>-->
+<!--<apex:outputText value="{!selectedCountry2}" label="You have selected:"/>-->
+              <!--</apex:pageBlockSectionItem>-->
+            <!--<apex:pageBlockSectionItem id="nowSec" rendered="{!SelectedSchFre=='1'}"> 
+                <apex:outputLabel value="Schedule Apex After"/> 
+                <apex:outputPanel >             
+                        <apex:selectList value="{!SelectedMinutes}" size="1">
+                            <apex:selectOption itemLabel="1 Min" itemValue="1"></apex:selectOption>
+                            <apex:selectOption itemLabel="2 Mins" itemValue="2"></apex:selectOption>
+                            <apex:selectOption itemLabel="3 Mins" itemValue="3"></apex:selectOption>
+                            <apex:selectOption itemLabel="4 Mins" itemValue="4"></apex:selectOption>                    
+                        </apex:selectList>
+                </apex:outputPanel>
+            </apex:pageBlockSectionItem>-->
+            <apex:pageBlockSectionItem id="options">
+                <apex:outputLabel value="Schedule Apex Execution" for="dt" />                
+                <apex:outputPanel styleClass="requiredInput" layout="block" >
+                    <apex:panelGrid id="options123" columns="3" width="100%" columnClasses="col1,col2,col3">
+                        <apex:outputLabel >Frequency</apex:outputLabel>
+                        <apex:outputPanel >
+                            <apex:selectRadio layout="pageDirection"  onclick="controllWeekMonth();" value="{!selectedTimeWindow}" style="margin-left:-5px;margin-top:-9px">
+                                <apex:selectOption itemLabel="Weekly" itemValue="1"></apex:selectOption>
+                                <apex:selectOption itemLabel="Monthly" itemValue="2"></apex:selectOption>                                
+                            </apex:selectRadio>
+                        </apex:outputPanel>
+                        
+                        <apex:outputPanel >
+                        <apex:outputPanel id="weekSec" rendered="{!selectedTimeWindow=='1'}">
+                          <apex:selectCheckboxes layout="pageDirection" style="margin-left:10px;" value="{!SelectedFreqValue}">
+                              <apex:selectOptions value="{!OppWeekDays}"/>                              
+                          </apex:selectCheckboxes>
+                        </apex:outputPanel>
+                           
+                         <apex:outputPanel id="monthSec" rendered="{!selectedTimeWindow=='2'}" style="background-color:#fff;">
+                         <div class="row">
+                             
+                         <input type="radio" label="row1" value="1" name="monthlyOptions" onclick="controllRadios(this.value);">  
+                               On day 
+                              <apex:selectList size="1" disabled="{!byDay}" id="byDay" value="{!selectedDay}">
+                                  <apex:selectOptions value="{!DayofMonth}"></apex:selectOptions>                                    
+                              </apex:selectList>
+                              of every month 
+                         </input>
+                         <input type="radio" label="row2" value="2" name="monthlyOptions" onclick="controllRadios(this.value);">  
+                               
+                                On 
+                                <apex:selectList size="1" disabled="{!byMonth}" id="byMonth" value="{!selectedWeekOfMonth}">
+                                  <apex:selectOption itemLabel="the 1st" itemValue="1"></apex:selectOption>
+                                  <apex:selectOption itemLabel="the 2nd" itemValue="2"></apex:selectOption>
+                                  <apex:selectOption itemLabel="the 3rd" itemValue="3"></apex:selectOption>
+                                  <apex:selectOption itemLabel="the 4th" itemValue="4"></apex:selectOption> 
+                                  <apex:selectOption itemLabel="the last" itemValue="last"></apex:selectOption> 
+                               </apex:selectList>
+                                <apex:selectList size="1" id="byWeek" disabled="{!byMonth}" value="{!selectedDayOfWeek}">
+                                  <apex:selectOptions value="{!WeekDays}"/>                                                
+                              </apex:selectList> 
+                             of every month
+                         </input>
+                         </div>
+                        </apex:outputPanel>
+                        </apex:outputPanel>
+                                    
+                        <apex:outputLabel >Start</apex:outputLabel> 
+                       
+                        <apex:outputPanel styleClass="requiredInput" layout="block" style="margin-left:15px;">
+                            <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                            <apex:input type="date" value="{!strDate}" label="Start" />
+                        </apex:outputPanel>
+                        <apex:outputPanel />
+
+                        <apex:outputLabel >End</apex:outputLabel>                        
+                       
+                         <apex:outputPanel styleClass="requiredInput" layout="block" style="margin-left:15px;">
+                            <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                            <apex:input type="date" value="{!endDate}" label="End" />
+                        </apex:outputPanel>
+                        <apex:outputPanel />
+                        
+                        <apex:outputLabel >Preferred Start Time</apex:outputLabel>
+                        <apex:outputPanel styleClass="requiredInput" layout="block" style="margin-left:10px;">
+                            <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                            <div style="width:50%; float:left;">
+                            <apex:selectList label="Preferred Start Time" multiselect="false" size="1" id="Time" value="{!selH}">
+                                <apex:selectOptions value="{!FrequencyTime}"/>                                
+                            </apex:selectList>
+                            </div>
+                            <div style="width:30%; float:left;">
+                             <apex:selectList label="Preferred Start Time" multiselect="false" size="1" id="MinTime" value="{!selM}">                                
+                                <apex:selectOptions value="{!FrequencyMinTime}"/>
+                            </apex:selectList>
+                             </div>
+                            <!--
+                            <div style="width:20%; float:left;">
+                             <apex:selectList label="Preferred Start Time" multiselect="false" size="1" id="SecTime" value="{!selS}">                                
+                                <apex:selectOptions value="{!FrequencySecTime}"/>
+                            </apex:selectList>
+                            </div> -->
+                        </apex:outputPanel>
+                        <apex:outputPanel />
+                        </apex:panelGrid>
+                        <br/><br/>
+                        <apex:outputLabel styleclass="labelCol vfLabelColTextWrap" value="Exact time will be dependent on Job queue activity" style="text-align:left !important; font-size: 10px !important;"/>
+                </apex:outputPanel>
+            </apex:pageBlockSectionItem>
+        
+        </apex:pageBlockSection>
+        <apex:pageBlockButtons >
+          <!--<apex:commandButton action="{!CustomSchedule}" value="Schedule" rendered="{!AND(SelectedSchFre!=null,SelectedSchFre!='--None--')}" reRender="frm"/>          
+          <apex:commandButton action="{!run}" value="Run" reRender="frm" rendered="{!OR(SelectedSchFre==null,SelectedSchFre=='--None--')}"/>-->
+          
+          <apex:commandButton action="{!CustomSchedule}" value="Schedule" reRender="frm"/>          
+          <apex:commandButton action="{!run}" value="Run" reRender="frm"/>
+          
+        </apex:pageBlockButtons>
+    
+     </apex:pageBlock>
+      
+      
+
+   </apex:form>
+</apex:page>

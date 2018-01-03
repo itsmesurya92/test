@@ -1,0 +1,77 @@
+<apex:page standardController="Account" extensions="AddMultipleAccountCLS">
+    <apex:form >
+        <apex:pageBlock title="My Content" mode="edit">
+           <apex:pageblockButtons >
+           <apex:commandButton value="Save" action="{!SaveMultipleAccounts}"/>
+  
+          </apex:pageblockButtons>
+
+
+            <apex:pageBlockSection title="My Content Section" columns="2">
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Account Name"/> 
+                   <apex:inputField value="{!Account.Name}"/>
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Account Site" for="account__site"/>
+                    <apex:inputField value="{!account.site}" id="account__site"/> 
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Account Type" for="account__type"/>
+                    <apex:inputField value="{!account.type}" id="account__type"/> 
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Account Number" for="account__number"/>
+                    <apex:inputField value="{!account.accountNumber}" id="account__number"/> 
+                </apex:pageBlockSectionItem> 
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="States" for="account__number"/>
+                    <apex:inputField value="{!account.States__c}" id="account__number"/> 
+                </apex:pageBlockSectionItem> 
+            </apex:pageBlockSection>
+            </apex:pageBlock>
+        
+        <apex:pageBlock id="thePB">
+        <apex:outputPanel id="accountHead">
+  <apex:variable value="{!0}" var="rowNum"/>  
+   <apex:pageBlockSection columns="1" title="Adding Multiple Accounts" id="thePbs" collapsible="False"> 
+   
+     <apex:pageBlockTable value="{!waAccList}" var="eachRecord"> 
+      
+      <apex:column headerValue="Action">
+        <apex:commandLink value="Remove" style="color:red" action="{!removeRowFromAccList}" rendered="{!rowNum > 0}" rerender="accountHead" immediate="true" >
+             <apex:param value="{!rowNum}" name="rowToRemove" assignTo="{!rowToRemove}"/>
+         </apex:commandLink>
+         <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+      </apex:column>
+      
+      <apex:column headerValue="Account Name">
+                            <apex:inputField value="{!eachRecord.record.Name}"/>
+       </apex:column>
+      
+      <apex:column headerValue="Account Number">
+                            <apex:inputField value="{!eachRecord.record.AccountNumber}"/>
+       </apex:column>
+       
+       
+       <apex:column headerValue="Account Type">
+                                <apex:inputfield value="{!eachRecord.record.Type}" />
+        </apex:column>
+      
+      <apex:column headerValue="Annual Revenue">
+                                <apex:inputField value="{!eachRecord.record.AnnualRevenue}"/>
+      </apex:column>   
+    
+    </apex:pageBlockTable>
+   </apex:pageBlockSection>
+   <apex:commandButton value="Add More" action="{!addNewRowToAccList}" rerender="accountHead" Status="status" immediate="true" />
+   
+  </apex:outputPanel>
+        
+       
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

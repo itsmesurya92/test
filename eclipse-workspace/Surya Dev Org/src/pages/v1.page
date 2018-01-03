@@ -1,0 +1,5 @@
+<apex:page controller="c1">
+{!mymethod.name}<br/>
+{!mymethod.Type}<br/>
+{!mymethod.Industry}
+</apex:page>

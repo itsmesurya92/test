@@ -1,0 +1,51 @@
+<apex:page controller="AddMultipleAccountCLS">
+<apex:form id="theForm">
+ <apex:pageblock id="thePB" title="Creating Multiple Accounts">
+  <apex:pageblockButtons >
+   <apex:commandButton value="Save" action="{!SaveMultipleAccounts}"/>
+  
+  </apex:pageblockButtons>
+
+  <apex:outputPanel id="accountHead">
+  <apex:variable value="{!0}" var="rowNum"/>  
+   <apex:pageBlockSection columns="1" title="Adding Multiple Accounts" id="thePbs" collapsible="False"> 
+   
+     <apex:pageBlockTable value="{!waAccList}" var="eachRecord"> 
+      
+      <apex:column headerValue="Action">
+        <apex:commandLink value="Remove" style="color:red" action="{!removeRowFromAccList}" rendered="{!rowNum > 0}" rerender="accountHead" immediate="true" >
+             <apex:param value="{!rowNum}" name="rowToRemove" assignTo="{!rowToRemove}"/>
+         </apex:commandLink>
+         <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+      </apex:column>
+      
+      <apex:column headerValue="Account Name">
+                            <apex:inputField value="{!eachRecord.record.Name}" required="true"/>
+       </apex:column>
+      
+      <apex:column headerValue="Account Number">
+                            <apex:inputField value="{!eachRecord.record.AccountNumber}" required="true"/>
+       </apex:column>
+       
+       
+       <apex:column headerValue="Account Type">
+                                <apex:inputfield value="{!eachRecord.record.Type}" />
+        </apex:column>
+      
+      <apex:column headerValue="Annual Revenue">
+                                <apex:inputField value="{!eachRecord.record.AnnualRevenue}" />
+      </apex:column>
+         <apex:column headerValue="States">
+                                <apex:inputField value="{!eachRecord.record.States__c}" />
+      </apex:column>   
+    
+    </apex:pageBlockTable>
+   </apex:pageBlockSection>
+   <apex:commandButton value="Add More" action="{!addNewRowToAccList}" rerender="accountHead" Status="status" immediate="true" />
+   
+  </apex:outputPanel>
+
+ </apex:pageblock>
+</apex:form>
+  
+</apex:page>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creation of a record in Invoice.</description>
+    <label>Create a record</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns/>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <successMessage>Success\/Fail</successMessage>
+    <targetObject>products_purchased__c</targetObject>
+    <targetParentField>Invoice__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

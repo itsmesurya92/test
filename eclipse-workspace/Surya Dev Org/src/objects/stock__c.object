@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Stores some info.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>States_of_warranty_provider__c</fullName>
+        <externalId>false</externalId>
+        <label>States of warranty provider</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>country_of_warranty_provider__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>birmingham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>british columbia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>california</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>illinois</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>london</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>massachusetts</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>melbourne</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>new york</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ontario</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>sydney</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>australia</controllingFieldValue>
+                <valueName>melbourne</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>australia</controllingFieldValue>
+                <valueName>sydney</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>canada</controllingFieldValue>
+                <valueName>british columbia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>canada</controllingFieldValue>
+                <valueName>ontario</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>uk</controllingFieldValue>
+                <valueName>birmingham</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>uk</controllingFieldValue>
+                <valueName>london</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>usa</controllingFieldValue>
+                <valueName>california</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>usa</controllingFieldValue>
+                <valueName>illinois</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>usa</controllingFieldValue>
+                <valueName>massachusetts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>usa</controllingFieldValue>
+                <valueName>new york</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Warranty_Applicable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>True or False</description>
+        <externalId>false</externalId>
+        <label>Warranty Applicable</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Warranty_Expiry_Date__c</fullName>
+        <description>Date in which product warranty expires</description>
+        <externalId>false</externalId>
+        <label>Warranty Expiry Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>country_of_warranty_provider__c</fullName>
+        <externalId>false</externalId>
+        <label>country of warranty provider</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>australia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>canada</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>uk</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>usa</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>price__c</fullName>
+        <description>the cost of items</description>
+        <externalId>false</externalId>
+        <label>price</label>
+        <precision>12</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>quantity__c</fullName>
+        <description>No. of items</description>
+        <externalId>false</externalId>
+        <label>quantity</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>time_of_stoking__c</fullName>
+        <defaultValue>Now()</defaultValue>
+        <description>exact time of stoking</description>
+        <externalId>false</externalId>
+        <label>time of stoking</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>total_price_of_all_units__c</fullName>
+        <externalId>false</externalId>
+        <formula>quantity__c  *  price__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>total price of all units</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>warranty_days_left__c</fullName>
+        <externalId>false</externalId>
+        <formula>Warranty_Expiry_Date__c  -  TODAY()</formula>
+        <label>warranty days left</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>warranty_provider__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Name of the warranty provider for the respective item.</description>
+        <externalId>false</externalId>
+        <label>warranty provider</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>stock</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>stock Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>stock</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>warranty_expiry_date_rule2</fullName>
+        <active>true</active>
+        <errorConditionFormula>Warranty_Applicable__c =false  &amp;&amp;  NOT( ISBLANK( Warranty_Expiry_Date__c ) )</errorConditionFormula>
+        <errorDisplayField>Warranty_Expiry_Date__c</errorDisplayField>
+        <errorMessage>please check warranty applicable before giving the warranty expiry date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>warrenty_expiry_date_rule</fullName>
+        <active>true</active>
+        <errorConditionFormula>Warranty_Applicable__c =true &amp;&amp;  ISBLANK( Warranty_Expiry_Date__c )</errorConditionFormula>
+        <errorDisplayField>Warranty_Expiry_Date__c</errorDisplayField>
+        <errorMessage>if warranty is applicable, you have to give warranty expiry date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>warrenty_provider_rule</fullName>
+        <active>true</active>
+        <errorConditionFormula>Warranty_Applicable__c =true &amp;&amp; NOT( ISBLANK( Warranty_Expiry_Date__c ) )  &amp;&amp;   ISBLANK( warranty_provider__c )</errorConditionFormula>
+        <errorDisplayField>warranty_provider__c</errorDisplayField>
+        <errorMessage>if warranty is applicable, you have to put warranty expiry date as well as warranty provider</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>warrenty_provider_rule2</fullName>
+        <active>true</active>
+        <errorConditionFormula>Warranty_Applicable__c =false &amp;&amp;  ISBLANK( Warranty_Expiry_Date__c ) &amp;&amp;  NOT( ISBLANK( warranty_provider__c ) )</errorConditionFormula>
+        <errorDisplayField>Warranty_Applicable__c</errorDisplayField>
+        <errorMessage>please check warranty applicable and warranty expiry date before giving warranty provider</errorMessage>
+    </validationRules>
+</CustomObject>

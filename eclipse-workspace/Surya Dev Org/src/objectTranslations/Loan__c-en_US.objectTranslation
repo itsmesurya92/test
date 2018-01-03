@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Loan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Loan</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>Account_Number__c</name>
+        <relationshipLabel><!-- Loan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit History --></label>
+        <name>Credit_History__c</name>
+        <relationshipLabel><!-- Loan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Loan Holder Name --></label>
+        <name>Loan_Holder_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Type --></label>
+        <name>Loan_Type__c</name>
+        <picklistValues>
+            <masterLabel>Auto Loan</masterLabel>
+            <translation><!-- Auto Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage Loan</masterLabel>
+            <translation><!-- Mortgage Loan --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

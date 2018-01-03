@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>EventFieldSet</fullName>
+        <description>VF</description>
+        <displayedFields>
+            <field>ZTS_US_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ZTS_US_Event_Category__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ZTS_US_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ZTS_US_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ZTS_US_Purpose_Agenda__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>EventFieldSet</label>
+    </fieldSets>
+    <fields>
+        <fullName>Speaker_ID_1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field will store the Contact SFDC ID reference for Speaker # 1
+
+Zoetis</description>
+        <externalId>false</externalId>
+        <label>Speaker ID 1</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Events (Speaker ID 1)</relationshipLabel>
+        <relationshipName>Event_Speaker_1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Speaker_ID_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Speaker ID 2</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Events (Speaker ID 2)</relationshipLabel>
+        <relationshipName>Event_Speaker_2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Speaker_ID_3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field will store the Contact SFDC ID reference for Speaker # 3
+
+Zoetis</description>
+        <externalId>false</externalId>
+        <label>Speaker ID 3</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Events (Speaker ID 3)</relationshipLabel>
+        <relationshipName>Event_Speaker_3</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ZTS_US_End_Date__c</fullName>
+        <description>Zoetis</description>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ZTS_US_Event_Category__c</fullName>
+        <description>Zoetis</description>
+        <externalId>false</externalId>
+        <label>Event Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Close</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CPAC</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Educational Meeting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Philanthropy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Premium Services</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Relationship Building</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorship</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Value Added Services</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Poultry Events</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marketing Meeting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Speaker Event – Online Registration</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ZTS_US_Location__c</fullName>
+        <description>Zoetis</description>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ZTS_US_Name__c</fullName>
+        <description>zoetis</description>
+        <externalId>false</externalId>
+        <label>Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ZTS_US_Purpose_Agenda__c</fullName>
+        <externalId>false</externalId>
+        <label>Purpose/Agenda</label>
+        <length>4000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ZTS_US_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ZTS_US_Status__c</fullName>
+        <description>Zoetis</description>
+        <externalId>false</externalId>
+        <label>Event Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pending Approval</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Re-approval Required</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ZTS_US_Type__c</fullName>
+        <description>Zoetis</description>
+        <externalId>false</externalId>
+        <label>Event Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>ZTS_US_Event_Category__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Close</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BRD Solutions</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Breeding Soundness Exams (BSE)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Business Development</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Calf &amp; Heifer Solutions</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cash Donations</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cattle General</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Charitable Event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Continuing Education Support</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Contract Distributor Programs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cooperative Advertising</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer surveys (DRC)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DISC</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Employee Training</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Equine General</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EquineInternalParaContrl</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Equine Lameness</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ES - Equine Customer Meeting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ES - Equine Vet Meeting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FRANK</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Full Day Wet Lab</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Genomics</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Half Day Wet Lab</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Impromptu event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>In Clinic/hospital</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>In Clinic Promotional Material</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Information Sharing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IPC – Event (Pork Only)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Join the Cause</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Large Group Roundtable</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Livestock Performance Specialist</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Local Event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mixed Prescribers and non-Prescribers</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nutritionist/Vet</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>People First</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pet Wellness Report</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ZFA Partnership Events</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Practice Management</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Process Engineering</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Producer, Retailer, Distributor events (non-Prescribers)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Producer Meeting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Product Donation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Production System Management</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Profit Solver</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Promotional Items</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Qmax: Quality Milk</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Retailer/Distributor Meeting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SAM Summit (CAD Only)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ScourGuard</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Small Group Roundtable</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Strategic Diagnostic Monitoring</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TCMR Meeting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Teleconference/Webex</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Trade Show</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Transition Cow Mgmt Report</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>UNIVERSITY EVENT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Vaccination Protocol</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Veritas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Vet/Influencer Meeting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Veterinarians and/or staff events (Prescribers)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>VMA Event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Student Meeting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Poultry Sponsorship</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Poultry Educational Event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Poultry Relationship Building</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Poultry Philanthrophy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ScheduHEALTH</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LPS Event (Cattle Only)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Valley AG Software</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Advisory Board</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Speaker Training</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Live Single Event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Consultation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Manuscript Writing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WebConference/Telecon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Advisory Meeting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CE Event</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>CPAC</controllingFieldValue>
+                <valueName>BRD Solutions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CPAC</controllingFieldValue>
+                <valueName>Breeding Soundness Exams (BSE)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CPAC</controllingFieldValue>
+                <valueName>Business Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CPAC</controllingFieldValue>
+                <valueName>Calf &amp; Heifer Solutions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CPAC</controllingFieldValue>
+                <valueName>Cattle General</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>of_CE_credits__c</fullName>
+        <description>zoetis</description>
+        <externalId>false</externalId>
+        <label># of CE credits</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Events</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>EVE-{0000}</displayFormat>
+        <label>Events Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Events</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

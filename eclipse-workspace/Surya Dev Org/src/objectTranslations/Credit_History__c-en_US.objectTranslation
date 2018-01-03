@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Credit History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Credit History</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Info --></label>
+        <name>Account_Info__c</name>
+        <relationshipLabel><!-- Credit History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Score --></label>
+        <name>Credit_Score__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Low</masterLabel>
+            <translation><!-- Very Low --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Eligible for Loan? --></label>
+        <name>Eligible_for_Loan__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

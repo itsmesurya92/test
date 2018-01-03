@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Temperature1</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Temperature</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address 1 --></label>
+        <name>Address_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>CityName__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image --></label>
+        <name>Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI --></label>
+        <name>NPI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient ID --></label>
+        <name>Patient_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Name --></label>
+        <name>Patient_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Picklist Values --></label>
+        <name>Picklist_Values__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deactive</masterLabel>
+            <translation><!-- Deactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Symptoms --></label>
+        <name>Symptoms__c</name>
+        <picklistValues>
+            <masterLabel>Chits</masterLabel>
+            <translation><!-- Chits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Navya</masterLabel>
+            <translation><!-- Navya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pruthvi</masterLabel>
+            <translation><!-- Pruthvi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satti</masterLabel>
+            <translation><!-- Satti --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smarty</masterLabel>
+            <translation><!-- Smarty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surya</masterLabel>
+            <translation><!-- Surya --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Text Area --></label>
+        <name>Text_Area__c</name>
+    </fields>
+    <layouts>
+        <layout>Temperature1 Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This Field is reuired if you select &quot;Active&quot; --></errorMessage>
+        <name>MakingFieldRequiredSelectingPicklistVal</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>First Test on my ORG</description>
+    <interviewLabel>New Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>New Flow</label>
+    <processType>Flow</processType>
+    <recordCreates>
+        <description>First Flow</description>
+        <name>Record_Create_Test</name>
+        <label>Record Create Test</label>
+        <locationX>504</locationX>
+        <locationY>130</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Health_Doctor__c</object>
+    </recordCreates>
+</Flow>

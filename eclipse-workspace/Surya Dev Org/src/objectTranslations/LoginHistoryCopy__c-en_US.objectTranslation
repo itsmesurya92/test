@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>LoginHistoryCopy</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>LoginHistoryCopy</value>
+    </caseValues>
+    <fields>
+        <label><!-- Id --></label>
+        <name>Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- LoginTime --></label>
+        <name>LoginTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- LoginUrl --></label>
+        <name>LoginUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserId --></label>
+        <name>UserId__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

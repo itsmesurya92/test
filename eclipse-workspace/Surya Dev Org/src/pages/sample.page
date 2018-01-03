@@ -1,0 +1,121 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" docType="html-5.0" applyBodyTag="False" applyHtmlTag="False">
+
+  <!--<apex:includeScript value="{!$Resource.SunTrust}" />-->
+ <!-- <apex:image url="{!$Resource.SunTrust}"/> -->
+
+    <apex:pageMessages ></apex:pageMessages>
+   
+       <head>
+            <apex:slds /> 
+      </head>
+    
+      <figure class="slds-image">
+      <a href="javascript:void(0);" class="slds-image">
+      <!--<img src="{!$Resource.SunTrust}" alt="Description of the image" style="slds-image"/>-->
+     
+<div>
+<!--<span class="slds-image">
+  <img src="{!$Resource.SunTrust}" alt="meaningful text" />
+</span>-->
+
+ <apex:includeScript value="{!$Resource.SunTrust}" />
+  <script>
+    svg4everybody();
+  </script>
+
+     </div> 
+      
+  </a>
+</figure>
+
+
+
+<style>
+    .pageHead{
+        background: rgb(51, 51, 51);
+        color:white;
+        
+    }  
+    .pageHeader{
+        top:15%;
+    position:relative;
+    
+    }
+    .slds-image{
+    
+    width: 150px;
+    
+    }
+    .slds-scope .slds-text-heading--large {
+        font-weight: 700;
+        font-size: 1.75rem;
+        line-height: 1.25;
+    }
+    .divCenter{
+        align:center;
+    }
+    
+      .slds-form-element{
+            font-size: 15px;
+            line-height: 1.66;
+             letter-spacing: 0.5px;
+        
+        }
+    .slds-form-element__control{
+    
+    padding: 50PX,50PX;
+    
+    }
+    
+    </style>
+ 
+ 
+
+    <!--.slds-box{
+    
+    height:100 px;
+    width: 200 px;
+    
+    
+    }-->
+
+
+  <apex:form > 
+  <!--<apex:image url="{!$Resource.SunTrust}" width="1000" height="50"/>-->
+
+   <div class="slds-scope">
+        <div style="height:80px" class="pageHead">
+            <div class="pageHeader slds-text-heading--large slds-text-align--center " style="top:30%;">SAMPLE PAGE</div>
+        </div>  
+       
+   
+           
+        
+            
+            <div class="slds-form-element"> 
+                <label for="Name" class="slds-form-element__label"  style="font-size:15px;"> sample Name </label>
+                <div class="slds-form-element__control">
+                <apex:input styleClass="slds-input" type="text" id="Name"   /> 
+                </div>  
+            </div>
+         
+            
+            <div class="slds-form-element">   
+                <label for="Employee ID" class="slds-form-element__label"  style="font-size:15px;"> sample Employee ID</label>
+                 <div class="slds-form-element__control">
+                    <apex:input type="text" id="empID" styleclass="slds-input " />
+                 </div>  
+            </div>
+           
+            
+           <div class="slds-form-element__control">      
+                <apex:commandButton styleClass="btn btn-primary" id="submit" value="submit"/>
+            </div>
+            
+            </div>
+           
+              
+    </apex:form>   
+   
+    
+</apex:page>

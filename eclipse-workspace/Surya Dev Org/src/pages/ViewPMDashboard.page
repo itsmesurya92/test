@@ -1,0 +1,109 @@
+<apex:page Controller="ViewPMDashboard_Ctrl" sidebar="false" >
+
+ <style> 
+    .Processing{
+        position: fixed;
+        background: url('/img/loading32.gif');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        z-index: 10004;
+        left: 0%;
+        top: 0%;
+    }
+       
+    .inputField
+    {
+        font color="red";
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; 
+        border-left:2px solid red; //red vertical line
+        placeholder :First name;
+     
+     }
+     
+    .inputField:focus
+    {
+        border-color: #66afe9;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    }
+    </style>
+    
+ <apex:form >
+    <apex:actionStatus id="status" startStyleClass="Processing"></apex:actionStatus>
+    <apex:pageBlock title="Search Criteria">
+        <apex:selectList size="1" value="{!SearchCriteriaVar}">
+            <apex:selectOptions value="{!SearchCriteria}"/>
+                <apex:actionSupport event="onchange" action="{!SelectionFields}" status="status" reRender="pgblkid,PnlGrp"/>
+        </apex:selectList>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        
+        <apex:panelGroup id="PnlGrp">
+            <apex:inputText rendered="{!HideShowText}" styleClass="inputField"  value="{!Selectedtext}" />
+            <apex:inputField value="{!objPurchseOrder.Cust_PO_Date__c}" rendered="{!HideShowDate }" styleClass="inputField" />
+        </apex:panelGroup><br/><br/>
+        <apex:commandButton value="Search" action="{!search}" reRender="pnl2" status="status"/>
+            <br/><br/><br/>
+        <apex:panelGroup id="pnl2">
+        <apex:pageBlock id="pgblkid" rendered="{!HideShowPgBlk}" >
+            <table width="100%" border="0">
+                <th>&nbsp;</th>
+                <th>Count</th>
+                <th>Value(INR Min)</th>
+                <tr>
+                    <td><b>Total Open Opportunity</b></td>
+                    <td><a href="#">{!count}</a></td>
+                    <td>{!countAmount1}</td>
+                </tr>
+                <tr>
+                    <td><b>Opportunity Validation</b></td>
+                    <td><a href="#"></a>{!countOppValidation}</td>
+                    <td>{!countAmount}</td>
+                </tr>
+                <tr>
+                    <td><b>Under Implementation</b></td>
+                    <td><a href="#">{!countUnderImplementation}</a></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>+On Hold</b></td>
+                    <td><a href="#">{!countOnHold}</a></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>Implemented</b></td>
+                    <td><a href="#">{!countOnImplemented}</a></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>Billing Completed-Order Closed</b></td>
+                    <td><a href="#">{!countBillingCompleted}</a></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>Orders cancelled</b></td>
+                    <td><a href="#">{!countOrderCancelled}</a></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>Orders Installed-pending for PCD generation</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>+Customer Need by Date Performance</b></td>
+                    <td><a href="#">{!countCustomerNeedByDate}</a></td>
+                    <td>0</td>
+                </tr>
+            </table>  
+        </apex:pageBlock>
+        </apex:panelGroup>
+    </apex:pageBlock>
+ </apex:form>
+</apex:page>

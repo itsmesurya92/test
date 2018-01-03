@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssistantName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>AssistantPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Birthdate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>CanAllowPortalSelfReg</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>CleanStatus</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Department</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>HomePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Interface_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Languages__c</fullName>
+        <externalId>false</externalId>
+        <label>Languages</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LastCURequestDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LastCUUpdateDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Level</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Secondary</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tertiary</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Primary</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MailingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>OtherAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>OtherPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>ReportsToId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Speaker_Bio__c</fullName>
+        <externalId>false</externalId>
+        <label>Speaker Bio</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>ZTS_US_Job_Function__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Function</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>ZTS_US_Profession__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Close</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Account Contact</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Accounts Payable</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Admin Asst/Recep.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ag Extension</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AI Technician/Breeder</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Animal Welfare</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Area Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ass&apos;t Prod MGR</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Associate Dean</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Associate Vet</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Barn/Service Mgr</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Breeder Mgr</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Buyer/Procurement</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Buyer/Purchasing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Calf/Heifer Mgr.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cattleman Science</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CEO/President</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CFO</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Clinical Faculty</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Communications</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Complex/General Mgr/Div Mgr</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Consulting Nutritionist</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Consulting Vet</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Contract Grower</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>COO/VP</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer Service Contact</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dean</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Department Head</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Diagnostician</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Director</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Distribution Rep</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Environment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Export Marketing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Faculty Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Farm Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Feed Mgr.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Feedmill Mgr</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Field Supervisor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Financial</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Food Safety</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fresh Cow Mgr.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Growout Mgr</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hatchery Mgr</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Herdsman</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hospital Administrator</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HQ</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HR</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Human Resources</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Inside Sales Rep</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Inside Sales Supervisor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Intern</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lab Mgr/Supervisor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Labor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Laboratory Technician</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lead Technician</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Live Production Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marketing Logistics Lead</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medical Director</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Milk Quality Mgr.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Operations</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Order Buyer/Sale Barn</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Outside Sales Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Outside Sales Rep</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Owner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Owner/Senior Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Parlor Mgr.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pharmacist</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pork Caregiver</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Practice/Office/Hospital Mgr.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Practice Mgt</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Procurement</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Production Mgr.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Production Technician</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pullet Mgr</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Purchasing Mgr.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Quality Assurance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>R&amp;D</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Referral Coordinator</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Registered Vet Tech (RVT)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Relief Vet</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Research Faculty</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Resident</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales/Marketing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales Associate/Clerk</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales Rep</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Senior Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Site Location Mgr.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Specialist</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Staff Nutritionist</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Staff Specialist</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Store Manager/Dept Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Student</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sustainability</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Technical Services</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Technician Supervisor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Trainer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Vet Assistant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Vet Ops</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Vet Technician</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>VP Live Production</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Warehouse Mgr</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Worker</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ZTS_US_Profession__c</fullName>
+        <externalId>false</externalId>
+        <label>Profession</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Close</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Academia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Account Contact</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Consultant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer Service Contact</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dealer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Distributor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Employee</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Executive Leadership</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Manager/Sr. Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nutritionist</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Staff</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Technician</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Veterinarian</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <listViews>
+        <fullName>AllContacts</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>BirthdaysThisMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.BIRTHDATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Birthdays This Month</label>
+    </listViews>
+    <listViews>
+        <fullName>MyContacts</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>NewLastWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_WEEK</value>
+        </filters>
+        <label>New Last Week</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

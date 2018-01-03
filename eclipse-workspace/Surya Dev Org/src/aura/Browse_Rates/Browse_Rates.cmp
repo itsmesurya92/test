@@ -1,0 +1,221 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	
+    
+        
+    <!-- CREATE NEW ITEM FORM -->
+    
+    
+    
+    <lightning:tabset >
+        <lightning:tab label="Buy A House">
+            <form class="slds-form--stacked">
+                
+                
+                <div class="slds-form--horizontal slds-p-xx-small">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="inputSample2">Zipcode</label>
+                        <div class="slds-form-element__control">
+                            <input type="text" id="inputSample2" class="slds-box slds-box--x-small slds-text-align--center  " placeholder="12345" />
+                        </div>
+                    </div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label " for="inputSample2" >Type</label>
+                        <div class="slds-form-element__control slds-is-selected">
+                            <div class="hold">
+                            <ui:button aura:id="button" label="Single Family Home"   />
+                            <ui:button aura:id="button" label="Townhouse"/>
+                            <ui:button aura:id="button" label="Multifamily Home"/>
+                            <ui:button aura:id="button" label="Condo"/>
+                            <ui:button aura:id="button" label="Manufactured Home"/>
+                        </div>
+                    </div>
+                   </div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label " for="inputSample2" >Type</label>
+                        <div class="slds-form-element__control slds-is-selected">
+                        <lightning:tabset >
+                            <lightning:tab label="Buy A House"></lightning:tab>
+                            <lightning:tab label="Buy A House"></lightning:tab>
+                        </lightning:tabset>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-form-element slds-m-top--x-small app-form-element" data-aura-rendered-by="7:114;a">
+                        <label class="slds-form-element__label" data-aura-rendered-by="8:114;a">Transaction Type</label>
+                        <div class="slds-tabs--default" data-aura-rendered-by="10:114;a">
+                            <ul class="slds-tabs--default__nav" role="tablist" data-aura-rendered-by="11:114;a">
+                                <li class="slds-tabs--default__item slds-text-heading--label occupation-tab" role="presentation" id="Refinance::Application:CTS_Transaction_Type__c" data-aura-rendered-by="13:114;a">
+                                    <a class="tab-active slds-tabs--default__link slds-align--absolute-center" aria-selected="true" href="javascript:void(0);" role="tab" tabindex="0" id="Refinance::Application:CTS_Transaction_Type__c" data-aura-rendered-by="14:114;a">
+                                        <span class="slds-icon_container slds-m-right--x-small" data-aura-rendered-by="15:114;a">
+                                            <img class="checked-icon" alt="checked" src="/resource/CTS_community/img/new-application/checked.png" data-aura-rendered-by="16:114;a"/>
+                                            </span>
+                                            Refinance
+                                        </a>
+                                    </li>
+                                    <li class="slds-tabs--default__item slds-text-heading--label occupation-tab" role="presentation" id="Purchase::Application:CTS_Transaction_Type__c" data-aura-rendered-by="18:114;a">
+                                        <a class="slds-tabs--default__link slds-align--absolute-center" aria-selected="true" href="javascript:void(0);" role="tab" 
+                                           tabindex="0" id="Purchase::Application:CTS_Transaction_Type__c" data-aura-rendered-by="19:114;a">
+                                            <span class="slds-icon_container slds-m-right--x-small" data-aura-rendered-by="20:114;a">
+                                                <img class="checked-icon" alt="checked" src="/resource/CTS_community/img/new-application/checked.png" data-aura-rendered-by="21:114;a"/>
+                                                </span>Purchase
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Usage</label>
+                                <div class="slds-form-element__control">
+                                    <div class="hold1">
+                                    <ui:button aura:id="button" label="Primary Home"/>
+                                    <ui:button aura:id="button" label="Secondary Home"/>
+                                    <ui:button aura:id="button" label="Investment"/>
+                                </div>
+                            </div>
+                          </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Purchase Price</label>
+                                <div class="slds-form-element__control">
+                                    <input type="text" id="inputSample2" class="slds-box slds-box--x-small slds-text-align--center" placeholder="$50,000" />
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Down Payment</label>
+                                <div class="slds-form-element__control">
+                                    <input type="text" id="inputSample2" class="slds-box slds-box--x-small slds-text-align--center" placeholder="$100,000" />      
+                                    <input type="text" id="inputSample2" class="slds-box slds-box--x-small slds-text-align--center" placeholder="20%" />
+                                    
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Annual Income</label>
+                                <div class="slds-form-element__control">
+                                    <input type="text" id="inputSample2" class="slds-box slds-box--x-small slds-text-align--center" placeholder="$100,000" />
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Monthly Debt</label>
+                                <div class="slds-form-element__control">
+                                    <input type="text" id="inputSample2" class="slds-box slds-box--x-small slds-text-align--center" placeholder="$1,000" />
+                                     <lightning:icon iconName="action:question_post_action" size="XX-small" alternativeText="Indicates Question" /> 
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Credit</label>
+                                <div class="slds-form-element__control">
+                                    <ui:button aura:id="button" label="Excellent (750+)"/>
+                                    <ui:button aura:id="button" label="Good (710-749)"/>
+                                    <ui:button aura:id="button" label="Decent (650-709)"/>
+                                    <ui:button aura:id="button" label="Not Good( &lt;650 )"/>
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Veteran</label>
+                                <div class="slds-form-element__control">
+                                    <ui:button aura:id="button" label="Yes"/>
+                                    <ui:button aura:id="button" label="No"/>  
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div>
+                            <br/>
+                            <center><ui:button aura:id="button" label="Fetch My Rates" class="clickon"/></center>
+                        </div>
+                    </form> 
+                </lightning:tab>
+                <lightning:tab label="Refinance My House">
+                    <form class="slds-form--stacked">
+                        
+                        
+                        <div class="slds-form--horizontal">
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Zipcode</label>
+                                <div class="slds-form-element__control">
+                                    <input type="text" id="inputSample2" class="slds-box slds-box--x-small slds-text-align--center " placeholder="Single Family Home" />
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Type</label>
+                                <div class="slds-form-element__control">
+                                    <ui:button aura:id="button" label="Single Family Home"/>
+                                    <ui:button aura:id="button" label="Townhouse"/>
+                                    <ui:button aura:id="button" label="Multifamily Home"/>
+                                    <ui:button aura:id="button" label="Condo"/>
+                                    <ui:button aura:id="button" label="Manufactured Home"/>
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Usage</label>
+                                <div class="slds-form-element__control">
+                                    <ui:button aura:id="button" label="Primary Home"/>
+                                    <ui:button aura:id="button" label="Secondary Home"/>
+                                    <ui:button aura:id="button" label="Investment"/>
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Property Value</label>
+                                <div class="slds-form-element__control">
+                                    <input type="text" id="inputSample2" class="slds-box slds-box--x-small slds-text-align--center" placeholder="$50,000" />
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Current Balance</label>
+                                <div class="slds-form-element__control">
+                                    <input type="text" id="inputSample2" class="slds-box slds-box--x-small slds-text-align--center" placeholder="$100,000" />      
+                                    <input type="text" id="inputSample2" class="slds-box slds-box--x-small slds-text-align--center" placeholder="20%" />
+                                    
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Annual Income</label>
+                                <div class="slds-form-element__control">
+                                    <input type="text" id="inputSample2" class="slds-box slds-box--x-small slds-text-align--center" placeholder="$100,000" />
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Monthly Debt</label>
+                                <div class="slds-form-element__control">
+                                    <input type="text" id="inputSample2" class="slds-box slds-box--x-small slds-text-align--center" placeholder="$1,000" />
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Credit</label>
+                                <div class="slds-form-element__control">
+                                    <ui:button aura:id="button" label="Excellent (750+)"/>
+                                    <ui:button aura:id="button" label="Good (710-749)"/>
+                                    <ui:button aura:id="button" label="Decent (650-709)"/>
+                                    <ui:button aura:id="button" label="Not Good( &lt;650 )"/>
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Veteran</label>
+                                <div class="slds-form-element__control">
+                                    <ui:button aura:id="button" label="Yes"/>
+                                    <ui:button aura:id="button" label="No"/>  
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="inputSample2">Cashout</label>
+                                <div class="slds-form-element__control">
+                                    <input type="text" id="inputSample2" class="slds-box slds-box--x-small slds-text-align--center" placeholder="$10,000" />
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div>
+                            <br/>
+                            <center><ui:button aura:id="button" label="Fetch My Rates" class="clickon"/></center>
+                        </div>
+                    </form>
+                </lightning:tab>
+            </lightning:tabset>
+            
+            
+        
+    
+    
+    
+</aura:component>

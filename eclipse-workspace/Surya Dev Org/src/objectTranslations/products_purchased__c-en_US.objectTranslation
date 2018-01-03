@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>products purchased</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>products purchased</value>
+    </caseValues>
+    <fields>
+        <label><!-- Invoice --></label>
+        <name>Invoice__c</name>
+        <relationshipLabel><!-- products purchased --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- quantity --></label>
+        <name>quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- stock --></label>
+        <name>stock__c</name>
+        <relationshipLabel><!-- products purchased --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- total price of all units --></label>
+        <name>total_price_of_all_units__c</name>
+    </fields>
+    <fields>
+        <label><!-- unit price --></label>
+        <name>unit_price__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

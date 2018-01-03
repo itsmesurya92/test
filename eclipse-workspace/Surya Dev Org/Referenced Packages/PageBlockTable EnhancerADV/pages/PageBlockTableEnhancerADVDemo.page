@@ -1,0 +1,64 @@
+<apex:page controller="pbe.PageBlockTableEnhancerADVDemo_Con" tabStyle="Contact" sidebar="true">
+    <style>
+        .new{
+            background: #FFEB3B;
+            padding: 10px;
+            border-radius: 6px;
+            border: solid 1px #FF5722;
+            font-size:14px;
+        }
+    </style>
+    <apex:sectionHeader subtitle="PageBlockTableEnhancerADV  Component Demo" title="Advanced VF table"/>   
+    <apex:form >
+        <c:PageBlockTableEnhancerADV targetPbTableIds="pbt"  pageSizeOptions="5,10,15,30" defaultPageSize="15" enableExport="true"/>
+        <apex:pageBlock id="pb">                     
+           <apex:pageblocksection title="This table is enhanced by PageBlockTableEnhancerADV" columns="1" collapsible="false">
+               <apex:pageblockTable value="{!contacts}" var="con" id="pbt" >
+                    <apex:column value="{!con.firstName}" headerClass="pbe-filter-enable"/>
+                    <apex:column value="{!con.lastname}"/>
+                    <apex:column value="{!con.Account.Name}"/>
+                    <apex:column value="{!con.Account.AnnualRevenue}"/>
+                    <apex:column value="{!con.Birthdate}" html-data-order="{!con.Birthdate}"/>
+                    <apex:column value="{!con.LastModifiedDate}"/>
+                </apex:pageblockTable>
+            </apex:pageblocksection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Rerender" oncomplete="initPageBlockTableEnhancerADV();" rerender="pb"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+   <apex:pageBlock title="Syntax">
+
+   
+   <apex:outputPanel layout="block" styleClass="new">
+       <h2>New !</h2>
+       <ul>
+           <li>
+               There is a new <b style="color:#FF5722">html-data-order</b> that lets you define the data that drives the sorting.<br/>
+               This is helpful when the sorting doesn't work as expected and you want to add helpers to make the sorting work with some data types.
+           </li>
+       </ul>
+   </apex:outputPanel>
+   <pre style="font-size:14px">
+<b style="color:blue">
+        &lt;pbe:PageBlockTableEnhancerADV targetPbTableIds=&quot;pbt&quot;  pageSizeOptions=&quot;5,10,15,30&quot; defaultPageSize=&quot;15&quot; enableExport=&quot;true&quot;/&gt;
+</b>
+        &#x3C;apex:pageBlock id=&#x22;pb&#x22;&#x3E;                     
+           &#x3C;apex:pageblocksection title=&#x22;This table is enhanced by PageBlockTableEnhancerADV&#x22; columns=&#x22;1&#x22; collapsible=&#x22;false&#x22;&#x3E;
+               &#x3C;apex:pageblockTable value=&#x22;{&#33;contacts}&#x22; var=&#x22;con&#x22; id=&#x22;pbt&#x22; &#x3E;
+                    &#x3C;apex:column value=&#x22;{&#33;con.firstName}&#x22; headerClass=&#x22;pbe-filter-enable&#x22;/&#x3E;
+                    &#x3C;apex:column value=&#x22;{&#33;con.lastname}&#x22;/&#x3E;
+                    &#x3C;apex:column value=&#x22;{&#33;con.Account.Name}&#x22;/&#x3E;
+                    &#x3C;apex:column value=&#x22;{&#33;con.Account.AnnualRevenue}&#x22;/&#x3E;
+                    &#x3C;apex:column value=&#x22;{&#33;con.Birthdate}&#x22; <b style="color:#FF5722">html-data-order=&#x22;{&#33;con.Birthdate}&#x22;/&#x3E;</b>
+                    &#x3C;apex:column value=&#x22;{&#33;con.LastModifiedDate}&#x22;/&#x3E;
+                &#x3C;/apex:pageblockTable&#x3E;
+            &#x3C;/apex:pageblocksection&#x3E;
+            &#x3C;apex:pageBlockButtons &#x3E;
+                &#x3C;apex:commandButton value=&#x22;Rerender&#x22; oncomplete=&#x22;initPageBlockTableEnhancerADV();&#x22; rerender=&#x22;pb&#x22;/&#x3E;
+            &#x3C;/apex:pageBlockButtons&#x3E;
+        &#x3C;/apex:pageBlock&#x3E;
+    </pre>
+   </apex:pageBlock>
+   <h1 style="font-size:130%;text-align:center;position:absolute;top:5px;right:5px;"><a href="http://blogforce9dev-developer-edition.ap1.force.com/PageBlockTableEnhancerIntro">For documentation and updates please click on this link</a> </h1>
+</apex:page>

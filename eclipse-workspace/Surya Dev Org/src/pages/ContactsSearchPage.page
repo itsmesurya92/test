@@ -1,0 +1,37 @@
+<apex:page controller="ContactsSearchController" sidebar="false">
+    <apex:form id="frm">
+        <apex:actionFunction name="sendConId" action="{!copyContactData}" reRender="frm">
+            <apex:param name="selectedRec" assignTo="{!selectedRec}" value=""/>
+        </apex:actionFunction>
+        <apex:pageBlock id="pb">
+            <apex:pageBlockSection columns="6">
+                <apex:inputText value="{!fNameStr}" label="First Name"/>
+                <apex:inputText value="{!lNameStr}" label="Last Name"/>
+                <apex:inputText value="{!emailStr}" label="Email"/>
+                <apex:inputText value="{!phnStr}" label="Phone"/>
+                <apex:commandButton value="Search" action="{!searchContacts}" reRender="pb"/>
+                <apex:commandButton value="Reset" action="{!resteSearchString}" reRender="pb"/>
+            </apex:pageBlockSection>
+            
+           
+            
+            <apex:pageBlockTable value="{!wrpConList}" var="c" rendered="{!wrpConList.size>0}">
+                <apex:column >
+                    <input type="radio" name="contact" value="{!c.con.Id}" onclick="sendConId(this.value);"/>      
+                </apex:column>
+                <apex:column value="{!c.con.FirstName}"/>
+                <apex:column value="{!c.con.LastName}"/>
+                <apex:column value="{!c.con.Email}"/>
+                <apex:column value="{!c.con.Phone}"/>
+                <apex:column value="{!c.con.Account.Name}" headerValue="Account Name"/>                
+            </apex:pageBlockTable>
+            <br/> 
+             <apex:outputLabel rendered="{!wrpConList.size<=0}" style="color:red;margin-left:330px">No records to display</apex:outputLabel>
+        </apex:pageBlock>
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:outputField value="{!con.FirstName}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

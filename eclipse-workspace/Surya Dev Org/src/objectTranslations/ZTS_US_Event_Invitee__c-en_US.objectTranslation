@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Event Invitee</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Event Invitees</value>
+    </caseValues>
+    <fields>
+        <label><!-- CE Event Non Registration Link --></label>
+        <name>CE_Event_Non_Registration_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- CE Event Registration Link --></label>
+        <name>CE_Event_Registration_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>ZTS_US_Contact__c</name>
+        <relationshipLabel><!-- Events Attended --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>ZTS_US_Event_Invitee_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>ZTS_US_Event_Invitee_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>ZTS_US_Event_Invitee_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>ZTS_US_Event_Invitee_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing State --></label>
+        <name>ZTS_US_Event_Invitee_Mailing_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Zip/Postal Code --></label>
+        <name>ZTS_US_Event_Invitee_Mailing_Zip_Postal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing City --></label>
+        <name>ZTS_US_Event_Invitee_Mailing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Name --></label>
+        <name>ZTS_US_Event_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Start Date --></label>
+        <name>ZTS_US_Event_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Status --></label>
+        <name>ZTS_US_Event_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Type --></label>
+        <name>ZTS_US_Event_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Events --></label>
+        <name>ZTS_US_Event__c</name>
+        <relationshipLabel><!-- Event Invitees --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invitation Status --></label>
+        <name>ZTS_US_Invitation_Status__c</name>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invited</masterLabel>
+            <translation><!-- Invited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registered</masterLabel>
+            <translation><!-- Registered --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

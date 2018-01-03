@@ -1,0 +1,22 @@
+<!-- For this example to render properly, you must associate the Visualforce page 
+with a valid contract record in the URL. 
+For example, if 001D000000IRt53 is the contract ID, the resulting URL should be: 
+https://Salesforce_instance/apex/myPage?id=001D000000IRt53
+See the Visualforce Developer's Guide Quick Start Tutorial for more information. -->
+         
+<apex:page standardController="Contract">
+    <apex:form id="changeDescription">
+    <apex:pageBlock >
+        <p>Current description: {!contract.description}</p>
+        <p>Change description to:</p> 
+        <apex:outputlabel value="Big Field">
+        <apex:outputPanel styleClass="requiredInput" layout="block">
+        <!--<apex:outputPanel styleClass="requiredBlock" layout="block"/>-->
+        <apex:inputTextarea value="{!contract.description}" required="true" id="bigfield"/><p/>
+        <apex:message for="bigfield" styleClass="locationError" />
+        </apex:outputPanel>
+        </apex:outputlabel>
+        <apex:commandButton value="Save" action="{!save}"/>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

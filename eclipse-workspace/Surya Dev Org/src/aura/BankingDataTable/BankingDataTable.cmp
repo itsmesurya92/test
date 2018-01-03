@@ -1,0 +1,123 @@
+<aura:component controller="BankingListController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="bankAccInfo" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.myfunc}" /> 
+    <table>
+        <tr>
+            <td><h3 style="padding-left:250px;"><B>Account Info Table</B></h3><br/></td>
+            <td><h3 style="padding-left:650px;"><B>Transaction Info Table</B></h3><br/></td>
+        </tr>
+        
+    </table>
+    
+    <table class="abc" style="width:49%;float: left;" >
+        <thead>
+            
+            <tr >
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Account Number</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Account Name</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Account Type</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Account Opened On</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.bankAccInfo}" var="acc">
+                <tr>
+                    <td style="border: 1px solid black;padding: 15px;background-color:yellow; "><a href="{!'/one/one.app?#/sObject/'+ acc.Id +'/view'}" target="_blank">{!acc.Name}</a></td>
+                    <td style="border: 1px solid black;padding: 15px;">{!acc.Account_Name__c}</td>
+                    <td style="border: 1px solid black;padding: 15px;">{!acc.Account_Type__c}</td>
+                    <td style="border: 1px solid black;padding: 15px;">{!acc.Account_Opened_On__c}</td>
+                    
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+    <aura:attribute name="bankTransactionInfo" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.myfunc1}" /> 
+   
+    <table class="abc" style="width:49%;float: right;" >
+        <thead>
+            <tr >
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Transaction Number</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Transaction Status</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Transferred Date</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Transferred to</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.bankTransactionInfo}" var="tra">
+                <tr>
+                    <td style="border: 1px solid black;padding: 15px;">{!tra.Name}</td>
+                    <td style="border: 1px solid black;padding: 15px;">{!tra.Transaction_Status__c}</td>
+                    <td style="border: 1px solid black;padding: 15px;">{!tra.Transferred_On__c}</td>
+                    <td style="border: 1px solid black;padding: 15px;background-color:yellow;">{!tra.Transferred_to__r.Name}</td>
+                    
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table><br/><br/>
+    <table>
+        <tr>
+            <td><h3 style="padding-left:250px;"><B>Loan Info Table</B></h3><br/></td>
+            <td><h3 style="padding-left:650px;"><B>Credit History Table</B></h3><br/></td>
+        </tr>
+        
+    </table>
+    <aura:attribute name="bankLoanInfo" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.myfunc2}" />   
+    <table class="abc" style="width:49%;float: left;" >
+        <thead>
+            <tr >
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Loan Number</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Account Number</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">SSN</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Loan Holder Name</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Loan Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.bankLoanInfo}" var="lne">
+                <tr>
+                    <td style="border: 1px solid black;padding: 15px;">{!lne.Name}</td>
+                    <td style="border: 1px solid black;padding: 15px;background-color:yellow;">{!lne.Account_Number__r.Name}</td>
+                    <td style="border: 1px solid black;padding: 15px;background-color:silver;">{!lne.Credit_History__r.Name}</td>
+                    <td style="border: 1px solid black;padding: 15px;">{!lne.Loan_Holder_Name__c}</td>
+                    <td style="border: 1px solid black;padding: 15px;">{!lne.Loan_Type__c}</td>
+                    
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+    <aura:attribute name="bankCreditInfo" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.myfunc3}" />   
+    <table class="abc" style="width:49%;float: right;" >
+        <thead>
+            <tr >
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">SSN</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Account Info</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Credit Score</th>
+                <th style="border: 1px solid black;background-color:green;color:white;text-align: center;padding: 15px;" scope="col">Eligible for Loan</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.bankCreditInfo}" var="ch">
+                <tr>
+                    <td style="border: 1px solid black;padding: 15px;background-color:silver;">{!ch.Name}</td>
+                    <td style="border: 1px solid black;padding: 15px;background-color:yellow;">{!ch.Account_Info__r.Name}</td>
+                    <td style="border: 1px solid black;padding: 15px;">{!ch.Credit_Score__c}</td>
+                    <td style="border: 1px solid black;padding: 15px;">{!ch.Eligible_for_Loan__c}</td>
+                    
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+    <table style="width:49%;float: left;">
+        <tr>
+        <p>NOTE: Grey and Yellow Represents Relation Between Objects</p>
+            </tr>
+        </table>
+        
+    
+</aura:component>

@@ -1,0 +1,29 @@
+<apex:page controller="c3" >
+    <apex:pageBlock title="List of Accounts and Opportunities">
+    <apex:form >
+        <apex:commandButton value="Show All Accounts" action="{!showall}" reRender="mytable"/>
+        <apex:commandButton value="Show Filtered Accounts" action="{!showfiltered}" reRender="mytable"/>
+        
+        <!--<apex:commandButton value="Show All Opportunities" action="{!oppshowall}" reRender="mytable"/>
+            <apex:commandButton value="Show Filtered Opportunities" action="{!oppshowfiltered}" reRender="mytable"/>
+            <apex:pageBlockTable value="{!selectedopts}" var="b" id="mytable">-->
+            <apex:pageBlockTable value="{!selectedacts}" var="a" id="mytable">
+                <apex:column value="{!a.Name}"/>
+                <apex:column value="{!a.Type}"/>
+                <apex:column value="{!a.Industry}"/>
+                <apex:column value="{!a.Phone}"/>
+                <apex:column value="{!a.Fax}"/>
+            </apex:pageBlockTable>
+            <apex:commandButton value="Show All Opportunities" action="{!oppshowall}" reRender="mytable"/>
+            <apex:commandButton value="Show Filtered Opportunities" action="{!oppshowfiltered}" reRender="mytable"/>
+            <apex:pageBlockTable value="{!selectedopts}" var="b" id="mytable1">
+                <apex:column value="{!b.Name}"/>
+                <apex:column value="{!b.Amount}"/>
+                <apex:column value="{!b.Probability}"/>
+                <apex:column value="{!b.CalculateTime__c}"/>
+                <apex:column value="{!b.Sub_Stage__c }"/>
+            </apex:pageBlockTable>
+            
+    </apex:form>
+    </apex:pageBlock>
+</apex:page>

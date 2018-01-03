@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Events</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Events</value>
+    </caseValues>
+    <fields>
+        <label><!-- Speaker ID 1 --></label>
+        <name>Speaker_ID_1__c</name>
+        <relationshipLabel><!-- Events (Speaker ID 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Speaker ID 2 --></label>
+        <name>Speaker_ID_2__c</name>
+        <relationshipLabel><!-- Events (Speaker ID 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Speaker ID 3 --></label>
+        <name>Speaker_ID_3__c</name>
+        <relationshipLabel><!-- Events (Speaker ID 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>ZTS_US_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Category --></label>
+        <name>ZTS_US_Event_Category__c</name>
+        <picklistValues>
+            <masterLabel>CPAC</masterLabel>
+            <translation><!-- CPAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close</masterLabel>
+            <translation><!-- Close --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Educational Meeting</masterLabel>
+            <translation><!-- Educational Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Meeting</masterLabel>
+            <translation><!-- Marketing Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philanthropy</masterLabel>
+            <translation><!-- Philanthropy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poultry Events</masterLabel>
+            <translation><!-- Poultry Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium Services</masterLabel>
+            <translation><!-- Premium Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship Building</masterLabel>
+            <translation><!-- Relationship Building --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker Event – Online Registration</masterLabel>
+            <translation><!-- Speaker Event – Online Registration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship</masterLabel>
+            <translation><!-- Sponsorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value Added Services</masterLabel>
+            <translation><!-- Value Added Services --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>ZTS_US_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>ZTS_US_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purpose/Agenda --></label>
+        <name>ZTS_US_Purpose_Agenda__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>ZTS_US_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Status --></label>
+        <name>ZTS_US_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Approval</masterLabel>
+            <translation><!-- Pending Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-approval Required</masterLabel>
+            <translation><!-- Re-approval Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Type --></label>
+        <name>ZTS_US_Type__c</name>
+        <picklistValues>
+            <masterLabel>Advisory Board</masterLabel>
+            <translation><!-- Advisory Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advisory Meeting</masterLabel>
+            <translation><!-- Advisory Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRD Solutions</masterLabel>
+            <translation><!-- BRD Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Breeding Soundness Exams (BSE)</masterLabel>
+            <translation><!-- Breeding Soundness Exams (BSE) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Development</masterLabel>
+            <translation><!-- Business Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CE Event</masterLabel>
+            <translation><!-- CE Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calf &amp; Heifer Solutions</masterLabel>
+            <translation><!-- Calf &amp; Heifer Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Donations</masterLabel>
+            <translation><!-- Cash Donations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cattle General</masterLabel>
+            <translation><!-- Cattle General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charitable Event</masterLabel>
+            <translation><!-- Charitable Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close</masterLabel>
+            <translation><!-- Close --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultation</masterLabel>
+            <translation><!-- Consultation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Continuing Education Support</masterLabel>
+            <translation><!-- Continuing Education Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Distributor Programs</masterLabel>
+            <translation><!-- Contract Distributor Programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cooperative Advertising</masterLabel>
+            <translation><!-- Cooperative Advertising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer surveys (DRC)</masterLabel>
+            <translation><!-- Customer surveys (DRC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISC</masterLabel>
+            <translation><!-- DISC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ES - Equine Customer Meeting</masterLabel>
+            <translation><!-- ES - Equine Customer Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ES - Equine Vet Meeting</masterLabel>
+            <translation><!-- ES - Equine Vet Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Training</masterLabel>
+            <translation><!-- Employee Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equine General</masterLabel>
+            <translation><!-- Equine General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equine Lameness</masterLabel>
+            <translation><!-- Equine Lameness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EquineInternalParaContrl</masterLabel>
+            <translation><!-- EquineInternalParaContrl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRANK</masterLabel>
+            <translation><!-- FRANK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Day Wet Lab</masterLabel>
+            <translation><!-- Full Day Wet Lab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Genomics</masterLabel>
+            <translation><!-- Genomics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half Day Wet Lab</masterLabel>
+            <translation><!-- Half Day Wet Lab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IPC – Event (Pork Only)</masterLabel>
+            <translation><!-- IPC – Event (Pork Only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impromptu event</masterLabel>
+            <translation><!-- Impromptu event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Clinic Promotional Material</masterLabel>
+            <translation><!-- In Clinic Promotional Material --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Clinic/hospital</masterLabel>
+            <translation><!-- In Clinic/hospital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information Sharing</masterLabel>
+            <translation><!-- Information Sharing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Join the Cause</masterLabel>
+            <translation><!-- Join the Cause --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LPS Event (Cattle Only)</masterLabel>
+            <translation><!-- LPS Event (Cattle Only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large Group Roundtable</masterLabel>
+            <translation><!-- Large Group Roundtable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Single Event</masterLabel>
+            <translation><!-- Live Single Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Livestock Performance Specialist</masterLabel>
+            <translation><!-- Livestock Performance Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Event</masterLabel>
+            <translation><!-- Local Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manuscript Writing</masterLabel>
+            <translation><!-- Manuscript Writing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixed Prescribers and non-Prescribers</masterLabel>
+            <translation><!-- Mixed Prescribers and non-Prescribers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nutritionist/Vet</masterLabel>
+            <translation><!-- Nutritionist/Vet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>People First</masterLabel>
+            <translation><!-- People First --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pet Wellness Report</masterLabel>
+            <translation><!-- Pet Wellness Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poultry Educational Event</masterLabel>
+            <translation><!-- Poultry Educational Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poultry Philanthrophy</masterLabel>
+            <translation><!-- Poultry Philanthrophy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poultry Relationship Building</masterLabel>
+            <translation><!-- Poultry Relationship Building --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poultry Sponsorship</masterLabel>
+            <translation><!-- Poultry Sponsorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practice Management</masterLabel>
+            <translation><!-- Practice Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Process Engineering</masterLabel>
+            <translation><!-- Process Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producer Meeting</masterLabel>
+            <translation><!-- Producer Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producer, Retailer, Distributor events (non-Prescribers)</masterLabel>
+            <translation><!-- Producer, Retailer, Distributor events (non-Prescribers) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Donation</masterLabel>
+            <translation><!-- Product Donation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Production System Management</masterLabel>
+            <translation><!-- Production System Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profit Solver</masterLabel>
+            <translation><!-- Profit Solver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotional Items</masterLabel>
+            <translation><!-- Promotional Items --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qmax: Quality Milk</masterLabel>
+            <translation><!-- Qmax: Quality Milk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retailer/Distributor Meeting</masterLabel>
+            <translation><!-- Retailer/Distributor Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAM Summit (CAD Only)</masterLabel>
+            <translation><!-- SAM Summit (CAD Only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ScheduHEALTH</masterLabel>
+            <translation><!-- ScheduHEALTH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ScourGuard</masterLabel>
+            <translation><!-- ScourGuard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Group Roundtable</masterLabel>
+            <translation><!-- Small Group Roundtable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker Training</masterLabel>
+            <translation><!-- Speaker Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Diagnostic Monitoring</masterLabel>
+            <translation><!-- Strategic Diagnostic Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Meeting</masterLabel>
+            <translation><!-- Student Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCMR Meeting</masterLabel>
+            <translation><!-- TCMR Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teleconference/Webex</masterLabel>
+            <translation><!-- Teleconference/Webex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transition Cow Mgmt Report</masterLabel>
+            <translation><!-- Transition Cow Mgmt Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNIVERSITY EVENT</masterLabel>
+            <translation><!-- UNIVERSITY EVENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VMA Event</masterLabel>
+            <translation><!-- VMA Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vaccination Protocol</masterLabel>
+            <translation><!-- Vaccination Protocol --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valley AG Software</masterLabel>
+            <translation><!-- Valley AG Software --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veritas</masterLabel>
+            <translation><!-- Veritas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vet/Influencer Meeting</masterLabel>
+            <translation><!-- Vet/Influencer Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veterinarians and/or staff events (Prescribers)</masterLabel>
+            <translation><!-- Veterinarians and/or staff events (Prescribers) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WebConference/Telecon</masterLabel>
+            <translation><!-- WebConference/Telecon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZFA Partnership Events</masterLabel>
+            <translation><!-- ZFA Partnership Events --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # of CE credits --></label>
+        <name>of_CE_credits__c</name>
+    </fields>
+    <layouts>
+        <layout>Events Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

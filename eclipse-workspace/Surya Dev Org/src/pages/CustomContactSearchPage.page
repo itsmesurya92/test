@@ -1,0 +1,103 @@
+<apex:page controller="CustomContactSearchCont" sidebar="false">
+<apex:outputLink >
+<apex:sectionHeader title="Contact" subtitle="Search"/>
+</apex:outputLink>
+<apex:pageMessages />
+<script type="text/javascript">
+var buttonValue="withwithout";
+
+
+    function doSearch()
+    {
+        searchServer(document.getElementById("firstName").value, 
+        document.getElementById("lastName").value, 
+        document.getElementById("phone").value,
+        document.getElementById("email").value,
+        document.getElementById("leadSource").options[document.getElementById("leadSource").selectedIndex].value, buttonValue);   
+    }
+    function whichButton()
+    {        
+        for (i = 0; i < document.myForm.group.length; i++) 
+        {
+            if (document.myForm.group[i].checked) 
+                buttonValue = document.myForm.group[i].value;
+        }  
+        doSearch();     
+    }
+    function doo(fname,lname,aa)
+    {
+        if(window.confirm("You are about to delete the Contact "+fname+" "+lname+'\n'+"Are you sure?"))       
+        {
+            delAcc(aa);
+        }
+    }
+</script>
+<apex:form >
+    <apex:actionFunction name="searchServer" action="{!runSearch}" reRender="results">
+        <apex:param name="firstName" value=""/>
+        <apex:param name="lastName" value=""/>
+        <apex:param name="phone" value=""/>
+        <apex:param name="email" value=""/>
+        <apex:param name="leadSource" value=""/>
+        <apex:param name="butVal" value="{!selectedacc}"/>        
+    </apex:actionFunction>
+    
+    <apex:actionFunction name="delAcc" action="{!delTheAccount}" reRender="results">
+        <apex:param name="identity" value="" assignTo="{!selectedacc}"/>
+    </apex:actionFunction>
+
+
+</apex:form>
+<form name="myForm">
+<table><tr><td valign="top" width="20%">
+    <apex:pageBlock title="Search Criteria" mode="edit">
+        
+        <table>
+            <tr><th>{!FirstNameLabel}</th></tr>
+            <tr><td><input type="text" id="firstName" onkeyup="doSearch();"/></td></tr>
+            <tr><th>{!LastNameLabel}</th></tr>
+            <tr><td><input type="text" id="lastName" onkeyup="doSearch();"/></td></tr>
+            <tr><th>{!PhoneLabel}</th></tr>
+            <tr><td><input type="text" id="phone" onkeyup="doSearch();"/></td></tr>
+            <tr><th>{!EmailLabel}</th></tr>
+            <tr><td><input type="text" id="email" onkeyup="doSearch();"/></td></tr>
+            <tr><th>{!LeadSourceLabel}</th></tr>
+            <tr><td><select onchange="doSearch()" id="leadSource">
+                       <option></option>
+                       <apex:repeat value="{!LeadSourceVal}" var="values">
+                            <option>{!values}</option>
+                        </apex:repeat>
+                    </select></td></tr>
+            <tr><td>
+
+</td></tr>
+            <!-- <tr><th>with Account</th><th><input type="radio" name="group" value="with" id="with" onclick="whichButton()" /></th></tr>           
+            <tr><th>without Account</th><th><input type="radio" name="group" value="without" id="without" onclick="whichButton()"/></th></tr>
+            <tr><th>with/without Account</th><th><input type="radio" name="group" value="withwithout" id="withwithout" onclick="whichButton()" checked="true" /></th></tr> -->
+        </table>
+    </apex:pageBlock>
+    </td>
+    <td width="80%" valign="top">
+    <apex:pageBlock title="Search Results" mode="detail">          
+    <apex:outputPanel id="results">
+        <apex:pageBlockTable value="{!cons}" var="con">
+            <apex:column headerValue="Action">
+               <apex:outputLink title="" value="/{!con.id}/e?retURL=/apex/{!$CurrentPage.Name}" style="font-weight:bold">Edit</apex:outputLink>&nbsp;|&nbsp;               
+                <a href="#" onclick="doo('{!con.FirstName}','{!con.LastName}','{!con.Id}');"><b>Del</b></a>
+            </apex:column>            
+            <apex:column headerValue="{!FullNameLabel}">
+            <apex:outputLink value="/{!con.Id}">
+                {!con.Name} 
+            </apex:outputLink> 
+            </apex:column>
+            <apex:column value="{!con.FirstName}" headerValue="{!FirstNameLabel}"/>
+            <apex:column value="{!con.LastName}" headerValue="{!LastNameLabel}"/>
+            <apex:column value="{!con.account.Name}" headerValue="Account Name"/>
+            <apex:column value="{!con.Phone}" headerValue="{!PhoneLabel}"/>
+            <apex:column value="{!con.Email}" headerValue="{!EmailLabel}"/>
+        </apex:pageBlockTable>
+    </apex:outputPanel>
+    </apex:pageBlock>       
+    </td></tr></table></form>
+    
+</apex:page>

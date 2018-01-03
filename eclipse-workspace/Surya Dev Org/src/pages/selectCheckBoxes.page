@@ -1,0 +1,10 @@
+<apex:page controller="selectdyn">
+    <apex:form id="form">
+        <apex:selectCheckboxes value="{!SelectedFreqValue}">
+            <apex:selectOptions value="{!OppWeekDays}"/>
+        </apex:selectCheckboxes>
+        {!opText}
+        <apex:commandButton value="List Selections" action="{!showOP}" reRender="form"/>
+        
+    </apex:form>
+</apex:page>

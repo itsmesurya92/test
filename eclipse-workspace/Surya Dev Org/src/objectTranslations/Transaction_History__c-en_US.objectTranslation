@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Transaction History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Transaction History</value>
+    </caseValues>
+    <fields>
+        <label><!-- Transaction Status --></label>
+        <name>Transaction_Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transferred On --></label>
+        <name>Transferred_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transferred to --></label>
+        <name>Transferred_to__c</name>
+        <relationshipLabel><!-- Transaction History --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

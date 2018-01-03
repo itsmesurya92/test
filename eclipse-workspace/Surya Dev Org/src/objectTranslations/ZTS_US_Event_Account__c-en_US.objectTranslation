@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Event Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Event Accounts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accounts --></label>
+        <name>ZTS_US_Event_Account__c</name>
+        <relationshipLabel><!-- Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Events --></label>
+        <name>ZTS_US_Events__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

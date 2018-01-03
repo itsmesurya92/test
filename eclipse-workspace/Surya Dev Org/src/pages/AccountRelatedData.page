@@ -1,0 +1,145 @@
+<apex:page controller="AccountRelatedDataCtrl">
+    <apex:form >
+        <apex:pageMessages id="msgs"/>
+        <apex:pageBlock title="Add Data" id="insertData">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}" reRender="msgs,insertData"/>
+                <!--<apex:commandButton value="Insert more data" action="{!resetPage}" reRender="msgs,insertData"/>-->
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Account details" columns="2">
+                <apex:repeat value="{!$ObjectType.Account.FieldSets.AccountFieldSet}" var="f">
+                    <apex:inputField value="{!acct[f]}" required="{!f.DBRequired || f.Required}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Contacts details" columns="1" id="contDetails">
+                <apex:variable value="{!0}" var="rowNum"/>
+                <apex:actionRegion >
+                    <apex:pageBlockTable value="{!contList}" var="cont">
+                        <apex:column headerValue="Action">
+                            <apex:commandLink value="Clone" action="{!cloneContactRow}"
+                                    reRender="contDetails,msgs">
+                                <apex:param name="rowNum" value="{!rowNum}"/>
+                            </apex:commandLink>
+                            <apex:outputText value=" | "/>
+                            <apex:commandLink value="Remove" action="{!removeContactRow}"
+                                    immediate="true" reRender="contDetails,msgs">
+                                <apex:param name="rowNum" value="{!rowNum}"/>
+                            </apex:commandLink>
+                            <apex:variable value="{!rowNum + 1}" var="rowNum"/>
+                        </apex:column>
+                        <apex:column headerValue="First Name">
+                            <apex:inputField value="{!cont.FirstName}" required="true"/>
+                        </apex:column>
+                        <apex:column headerValue="Last Name">
+                            <apex:inputField value="{!cont.LastName}" required="true"/>
+                        </apex:column>
+                        <apex:column headerValue="Email">
+                            <apex:inputField value="{!cont.Email}" required="true"/>
+                        </apex:column>
+                        <apex:column headerValue="Phone">
+                            <apex:inputField value="{!cont.Phone}"/>
+                        </apex:column>
+                    </apex:pageBlockTable>
+                </apex:actionRegion>
+                <apex:commandLink value="Add Row" action="{!addContactRow}" immediate="true"
+                        reRender="contDetails,msgs"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Opportunity details" columns="1" id="opptyDetails">
+                <apex:variable value="{!0}" var="rowNum"/>
+                <apex:actionRegion >
+                    <apex:pageBlockTable value="{!opptyList}" var="oppty">
+                        <apex:column headerValue="Action">
+                            <apex:commandLink value="Clone" action="{!cloneOpptyRow}"
+                                    reRender="opptyDetails,msgs">
+                                <apex:param name="rowNum" value="{!rowNum}"/>
+                            </apex:commandLink>
+                            <apex:outputText value=" | "/>
+                            <apex:commandLink value="Remove" action="{!removeOpptyRow}"
+                                    immediate="true" reRender="opptyDetails,msgs">
+                                <apex:param name="rowNum" value="{!rowNum}"/>
+                            </apex:commandLink>
+                            <apex:variable value="{!rowNum + 1}" var="rowNum"/>
+                        </apex:column>
+                        <apex:column headerValue="Name">
+                            <apex:inputField value="{!oppty.Name}" required="true"/>
+                        </apex:column>
+                        <apex:column headerValue="Amount">
+                            <apex:inputField value="{!oppty.Amount}"/>
+                        </apex:column>
+                        <apex:column headerValue="Stage">
+                            <apex:inputField value="{!oppty.StageName}"/>
+                        </apex:column>
+                        <apex:column headerValue="Close Date">
+                            <apex:inputField value="{!oppty.CloseDate}"/>
+                        </apex:column>
+                    </apex:pageBlockTable>
+                </apex:actionRegion>
+                <apex:commandLink value="Add Row" action="{!addOpptyRow}" immediate="true"
+                        reRender="opptyDetails,msgs"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Event details" columns="2" id="evntDetails">
+                <apex:repeat value="{!$ObjectType.ZTS_Events__c.FieldSets.EventFieldSet}" var="f">
+                    <apex:inputField value="{!evnt[f]}" required="{!f.DBRequired || f.Required}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Event Invitee details" columns="1" id="intDetails">
+                <apex:variable value="{!0}" var="rowNum"/>
+                <apex:actionRegion >
+                    <apex:pageBlockTable value="{!evntIntList}" var="int">
+                        <apex:column headerValue="Action">
+                            <apex:commandLink value="Clone" action="{!cloneEvntIntRow}"
+                                    reRender="intDetails,msgs">
+                                <apex:param name="rowNum" value="{!rowNum}"/>
+                            </apex:commandLink>
+                            <apex:outputText value=" | "/>
+                            <apex:commandLink value="Remove" action="{!removeEvntIntRow}"
+                                    immediate="true" reRender="intDetails,msgs">
+                                <apex:param name="rowNum" value="{!rowNum}"/>
+                            </apex:commandLink>
+                            <apex:variable value="{!rowNum + 1}" var="rowNum"/>
+                        </apex:column>
+                        <apex:column headerValue="Contact">
+                            <apex:inputField value="{!int.ZTS_US_Contact__c}" required="true"/>
+                        </apex:column>
+                        <apex:column headerValue="Invitation Status">
+                            <apex:inputField value="{!int.ZTS_US_Invitation_Status__c}" required="true"/>
+                        </apex:column>
+                    </apex:pageBlockTable>
+                </apex:actionRegion>
+                <apex:commandLink value="Add Row" action="{!addEvntIntRow}" immediate="true"
+                        reRender="intDetails,msgs"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Event Schedule details" columns="1" id="schedDetails">
+                <apex:variable value="{!0}" var="rowNum"/>
+                <apex:actionRegion >
+                    <apex:pageBlockTable value="{!evntSchedList}" var="sched">
+                        <apex:column headerValue="Action">
+                            <apex:commandLink value="Clone" action="{!cloneEvntSchedRow}"
+                                    reRender="schedDetails,msgs">
+                                <apex:param name="rowNum" value="{!rowNum}"/>
+                            </apex:commandLink>
+                            <apex:outputText value=" | "/>
+                            <apex:commandLink value="Remove" action="{!removeEvntSchedRow}"
+                                    immediate="true" reRender="schedDetails,msgs">
+                                <apex:param name="rowNum" value="{!rowNum}"/>
+                            </apex:commandLink>
+                            <apex:variable value="{!rowNum + 1}" var="rowNum"/>
+                        </apex:column>
+                        <apex:column headerValue="Name">
+                            <apex:inputField value="{!sched.Name}" required="true"/>
+                        </apex:column>
+                        <apex:column headerValue="Start Date">
+                            <apex:inputField value="{!sched.Start_Date__c}" required="true"/>
+                        </apex:column>
+                        <apex:column headerValue="End Date">
+                            <apex:inputField value="{!sched.End_Date__c}" required="true"/>
+                        </apex:column>
+                    </apex:pageBlockTable>
+                </apex:actionRegion>
+                <apex:commandLink value="Add Row" action="{!addEvntSchedRow}" immediate="true"
+                        reRender="schedDetails,msgs"/>
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
