@@ -1,3 +1,4 @@
+//new class
 public class accconhierarchy {
     Private list<account> acc;
     
